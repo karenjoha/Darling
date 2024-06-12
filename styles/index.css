@@ -185,15 +185,16 @@ div h1{
 }
 
 .shopnow{
+    background-color: transparent;
+    border-color: #ffffff;
+    color:#ffffff;
     position: absolute;
-    top: 30rem;
+    top: 29rem;
     height: 2rem;
     left: 6rem;
     border-radius: 2rem;
     width: 9rem;
     cursor: pointer;
-    
-
 }
 
 
@@ -202,40 +203,27 @@ div h1{
     align-items: center;
     align-content: center;
     justify-content: flex-end;
-    background-color: red;
 }
 
-.title .imageandvideo{
-    display: grid;
-    align-content: flex-start;
-    justify-content: flex-end;
-}
 
 .title .letters{
     display: flex;
     justify-content: space-between;
 }
 
-/* Esta es la configuracion que tenía
-div .imgsection1{
-    position: absolute; 
-    left: 46.8rem; 
-    width: 25rem; 
-    height: 33.9rem; 
-    border-radius: 8px; 
-    top: 8.6rem;
-} */
+.imgsection1{
+    border-radius: 1rem;
+    margin-right: 16rem;
+}
 
-/* esto lo tenía
-div .videosection1{
-    position: absolute; 
-    left: 65.68rem; 
-    width: 15rem; 
-    height: 20rem; 
-    border-radius: 121px 121px 0px 0px; /* border-tl-rounded border-tr-rounded */
-    /* box-shadow: 0px 8px 17px #171a1f, 0px 0px 2px #171a1f;
-    top: 15.6rem; 
-} */ 
+.videosection1{
+    border-radius: 121px 121px 0px 0px;
+    width: 15rem;
+    position: absolute;
+    margin-right: 5rem;
+    border: solid 1px white;
+}
+
 
 .title .letters{
     background-color: #093931FF;
@@ -245,10 +233,8 @@ div .videosection1{
 
 
 .section2 .icons{
-    /* border: 5px solid darkblue; */
     display: flex;
     justify-content: center;
-    /* background-color: aqua; */
     justify-content: space-around;
 } 
 
@@ -257,6 +243,7 @@ div .videosection1{
     display: flex;
     justify-content: space-around;
     padding-left: 10%;
+    text-align: center;
 }
 
 .icons {
@@ -281,11 +268,6 @@ li svg{
     
 }
 
-/* li .imagec svg h3 p{
-    display: flex;
-    align-content: center;
-    align-items: center;
-} */
 
 
 .description{
@@ -310,13 +292,11 @@ li svg{
     display: flex;
     align-content: center;
     align-items: center;
-    background-color: yellow;
 }
 
 .titlecollections h2{
     font-family: 'Cormorant';
-    color:#0D554AFF ;
-    
+    color:var(--primary-green) ;
 }
 
 div.titlecollections{
@@ -330,7 +310,6 @@ div.titlecollections{
 .grid-container{
     display: grid;
     grid-gap: 10px;
-    background-color: black;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     padding: 10px;
@@ -338,7 +317,6 @@ div.titlecollections{
 
 figure .picture{
     margin: 0;
-    object-fit: cover;
     width: 100%;
 }
 
@@ -353,9 +331,6 @@ div .ourcollections{
 
 .picture img{
     display: grid;
-    /* max-width: 100%;
-    height: auto; */
-    /* border: 5px solid red; */
     align-items: center;
     border-radius: 2%;
 }
@@ -373,30 +348,32 @@ div .ourcollections{
 .grid-container .picture{
     display: flex;
     justify-content: center;
-    /* border: 5px solid orange; */
-    /* overflow: hidden; */
 }
 
 
 .shopnow2{
-    display: grid;
-    background-color: red;
-    justify-items: center;
-    align-items: center;
-    place-items: center;
+    background-color: transparent;
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 15%;
+    height: 3rem;
+    border-color: var(--primary-green);
+    cursor: pointer;
+    
 
 }
 
+div.button2{
+    height: 6rem;
+}
+
+.button2{
+    text-align: -webkit-center;
+}
 .grid-container.shopnow2{
     display: grid;
     align-items: center;
 
 }
-
-/* .picture .shopnow2{
-    background-color: greenyellow;
-    display: flex;
-    justify-content: center;
-} */
 
 
