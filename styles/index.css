@@ -190,6 +190,18 @@ nav{
     display: none;
 }
 
+@media (max-width: 850px){
+    html{
+        font-size: 14px;
+    }
+    .header__menu{
+        display: block;
+    }
+    .header__links{
+        display: none;
+    }
+}
+
 /* nav */
 
 
