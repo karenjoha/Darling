@@ -12,20 +12,66 @@
 <body>
     <header>
         <!-- Fernanda -->
-        <div class="logo">
-            <a href="logo">Darling.</a>
-        </div>
-        <nav>
-        <ul class="list">
-            <li><a href="">Home</a></li>
-            <li><a href="">Tienda</a></li>
-            <li><a href="">Colecciones</a></li>
-            <li><a href="">Acerca de</a></li>
-            <li><a href="">Contacto</a></li>
-            <li><a href="#"><i class="fas fa-user"></i></a></li>
-            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-            
-        </ul>
+        <nav class="header__nav">
+            <a class="header__logo" href="">Darling .</a>
+            <div class="header__links">
+                <ul>
+                <li class="active"><a href="">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li ><a href="">Collections</a></li>
+                <li><a href="">About</a></li>
+                </ul>
+                <div class="header__buttons">
+                <button>
+                <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10 8.5C11.6569 8.5 13 7.15685 13 5.5C13 3.84315 11.6569 2.5 10 2.5C8.34315 2.5 7 3.84315 7 5.5C7 7.15685 8.34315 8.5 10 8.5Z"/>
+                    <path
+                        d="M10 11C8.27609 11 6.62279 11.6848 5.40381 12.9038C4.18482 14.1228 3.5 15.7761 3.5 17.5L16.5 17.5C16.5 15.7761 15.8152 14.1228 14.5962 12.9038C13.3772 11.6848 11.7239 11 10 11Z"
+                        stroke="white"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    </svg>
+                </button>
+                <button>
+                    <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"> 
+                    <path
+                        d="M2.5 2.5L5.5 2.5L5.5 10C5.5 10.828 6.172 11.5 7 11.5L14.419 11.5C15.065 11.5 15.638 11.087 15.842 10.474L17.5 5.5L5.5 5.5"
+                        stroke="white"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                    <path
+                        d="M6 17.5C6.82843 17.5 7.5 16.8284 7.5 16C7.5 15.1716 6.82843 14.5 6 14.5C5.17157 14.5 4.5 15.1716 4.5 16C4.5 16.8284 5.17157 17.5 6 17.5Z"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke="white"
+                    />
+                    <path
+                    d="M15 17.5C15.8284 17.5 16.5 16.8284 16.5 16C16.5 15.1716 15.8284 14.5 15 14.5C14.1716 14.5 13.5 15.1716 13.5 16C13.5 16.8284 14.1716 17.5 15 17.5Z"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    />
+                </svg>
+                </button>
+            </div>
+            </div>
+            <button class="header__menu"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#F5D38EFF"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg></button>
         </nav> 
     </header>
     <main>
@@ -40,33 +86,21 @@
             </div>
         </section>
         <section>
-            <div class="section2">
+            <div class="section__services">
                 <div class="icons">
-                    <ul>
-                        <li class="imagec">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 14 14"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="12.49" r="1"/><circle cx="10.5" cy="12.49" r="1"/><path d="M8.38 3.53A4 4 0 1 0 2 7.62m2.5-3.11L6 3.01m.5 6.49v-1H5a2 2 0 0 0-2 2v2"/><path d="M13.5 12.49v-5a1 1 0 0 0-1-1h-5a1 1 0 0 0-1 1v2"/></g></svg>
-                            <h3 class="item">Delivery</h3>
-                            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, explicabo beatae.</p>
-                        </li>
-                    </ul>
+                    <img src="/assets/images/Delivery time 1.svg" alt="delivery">
+                    <h3>Delivery</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, sed nihil!</p>
                 </div>
                 <div class="icons">
-                    <ul>
-                        <li class="imagec">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M15.8 9.2a2.5 2.5 0 0 0-3.5 0l-.3.4l-.35-.3a2.42 2.42 0 1 0-3.2 3.6l3.6 3.5l3.6-3.5c1.2-1.2 1.1-2.7.2-3.7"/></g></svg>
-                            <h3 class="item">Customer care</h3>
-                            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, explicabo beatae.</p>
-                        </li>
-                    </ul>
+                    <img src="/assets/images/Love message 1.svg" alt="lovemessage">
+                    <h3>Customer care</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, fugiat facere.</p>
                 </div>
                 <div class="icons">
-                    <ul>
-                        <li class="imagec">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 14 14"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 2.5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1h-2m-7-2v4m7-4v4m-7-2h5"/><path d="M5 8h4v3H5zm.5 0V7a1.5 1.5 0 0 1 3 0v1"/></g></svg>
-                            <h3 class="item">Payment Security</h3>
-                            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, explicabo beatae.</p>
-                        </li>
-                    </ul>
+                    <img src="/assets/images/Lock landscape 1.svg" alt="locklandscape">
+                    <h3>Payment security</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, omnis autem?</p>
                 </div>
             </div>
         </section>
