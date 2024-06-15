@@ -202,6 +202,7 @@ nav{
     }
 }
 
+
 /* nav */
 
 
@@ -272,7 +273,6 @@ div h1{
     align-items: center;
     align-content: center;
     padding: 1.5rem;
-    /* aspect-ratio: 1440/232; */
     top: 845px; 
     left: 17.75rem; 
     right: 17.75rem;
@@ -301,65 +301,68 @@ div h1{
 }
 
 
-.titlecollections{
-    display: flex;
+.Title-our-collections{
+    font-family: var(--tipography-headings);
+    text-align: center;
     align-content: center;
-    align-items: center;
+    top: 70px; 
+    left: 580px;
+    color: var(--color-primary);
+    line-height: 3.5rem;
 }
 
-.titlecollections h2{
-    font-family: 'Cormorant';
-    color:var(--primary-green) ;
+
+.our-collections .card figcaption{
+    font-family: Cormorant Garamond; 
+    font-size: 32px; 
+    line-height: 48px; 
+    color: var(--color-primary);
+    background-size: cover;
+
 }
 
-div.titlecollections{
+.card figcaption{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 3%;
+    align-content: center
+    
 }
 
-.grid-container{
+@media(min-width: 1024px){
+    #elevado1, #elevado2, .Title-our-collections{
+        transform: translateY(-50px);
+    }
+}
+
+main .our-collections{
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     padding: 10px;
+    align-items: center;
+    padding-bottom: 2rem;
+    justify-content: center;
 }
 
-figure .picture{
-    margin: 0;
+
+.our-collections .card img{
+    border-radius: 0.625rem;
+    aspect-ratio: 360/360; 
+    display: grid;
+    align-content: center;
+}
+
+
+.card figure{
     width: 100%;
 }
 
-div .ourcollections{
-    display: flex;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    align-items: center;
-    font-size: 18px;
-}
-
-.picture img{
-    display: grid;
-    align-items: center;
-    border-radius: 2%;
-}
-
-.picture figcaption{
-    position: relative;
-    text-align: center;
-    color: #FFFFFFFF;
-    font-family: 'Cormorant';
-    font-size: 32px;
-    padding-top: 300px;
-    border-radius: 10%;
-}
-
-.grid-container .picture{
-    display: flex;
-    justify-content: center;
+.card figure .img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 
