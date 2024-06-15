@@ -84,6 +84,7 @@ footer{
     border-bottom-right-radius: 1rem;
     border-top-right-radius: 1rem;
 }
+
 .input-group button:hover {
     background-color: #f3bc4e;
 }

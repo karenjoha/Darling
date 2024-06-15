@@ -111,7 +111,7 @@ main {
     padding: 0;
     box-sizing: border-box;
 }
- /* nav */
+ 
 
 nav{
     max-width: 100%;
@@ -200,11 +200,8 @@ nav{
     .header__links{
         display: none;
     }
+
 }
-
-
-/* nav */
-
 
 
 
