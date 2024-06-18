@@ -231,7 +231,6 @@ div h1{
     height: 46rem;
 }
 
-
 .section2 .icons{
     display: flex;
     justify-content: center;
@@ -377,3 +376,6 @@ div.button2{
 }
 
 
+.logo-image{
+    padding-bottom: 3rem;
+}
