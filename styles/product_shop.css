@@ -1,6 +1,128 @@
+:root{
+    --primary-green:#093931;
+    --secondary-green:#0D554A
+}
+
 .title-green{
-    color: #0D554A;
+    color: var(--secondary-green);
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 8.25rem;
     font-size: 2.5rem;
+}
+.title-space{
+    margin-left: 8.25rem;
+}
+.button-to-bag{
+    background-color: transparent;
+    border: solid 1px var(--secondary-green);
+    color: var(--secondary-green);
+}
+.button-now{
+    background-color: var(--secondary-green);
+    color: white;
+    border: none;
+}
+.button{
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 15rem;
+    cursor: pointer;
+}
+.product_image_mini{
+    width: 4rem;
+    height: 5rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    margin: 0.5rem;
+}
+.product_image{
+    width: 30rem;
+    height: 40rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+.product_catalogue{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product_catalogue_mini{
+    @media (min-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.section_catalogue{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.price{
+    color:#B37D10 ;
+    font-size: 2.5rem;
+}
+.button-color{
+    border-radius: 50%;
+    width:2.25rem;
+    height:2.25rem;
+    border: none;
+    cursor: pointer;
+}
+.button-color:active{
+    border: solid 1px var(--primary-green);
+}
+.gray{
+    background-color: #DEE1E6;
+}
+.rose{
+    background-color: #E6AE87;
+}
+a{
+    color: var(--primary-green);
+}
+.size-title{
+    display: flex;
+    justify-content: space-between;
+}
+.button-size{
+    background-color: transparent;
+    border: solid 1px var(--primary-green);
+    color: var(--primary-green);
+    width: 2.5rem;
+    height: 2.25rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.button-size:active{
+    border: solid 1px #8F640C;
+    color: #8F640C;
+}
+select{
+    border: none;
+    border-bottom: solid 1px gray;
+    width:16.6rem ;
+    height: 2.75rem;
+}
+.space{
+    padding: 3rem 0rem 0rem 0rem;
+}
+.space1{
+    padding: 1rem 0rem 0rem 0rem;
+}
+.amount{
+    width: 2.43rem;
+    height: 2.75rem;
+}
+.negrilla{
+    font-weight: bold;
+}
+.text-of-video{
+    width: 73.5rem;
+    text-align: left;
+}
+.text-and-video{
+    text-align: -webkit-center;
+}
+.video{
+    width: 64.5rem;
+    height: 36.3rem;
+    object-fit: cover;
 }
