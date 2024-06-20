@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/car_of_shop.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-******************************" crossorigin="anonymous" />
     <title>Shop</title>
@@ -75,14 +76,105 @@
     </header>
     <main>
         <section>
-            <h1>hi</h1>
+            <div class="car_shop_container">
+                <div>
+                    <h2>Order Summary</h2>
+                    <table class="table-container">
+                        <tbody>
+                            <tr>
+                                <td><img class="image-car" src="assets/images/catalogue1.jpg" alt="Product Image"></td>
+                                <td>
+                                    <div>
+                                        <label>Luxury Charms Ring</label>
+                                        <p>Code: 78205</p>
+                                    </div>
+                                </td>
+                                <td><h2>$620.73</h2></td>
+                                <td><button><img src="assets/svg/trash.svg" alt="Favorite"></td></button>
+                            </tr>
+                            <tr>
+                                <td><img class="image-car" src="assets/images/catalogue2.jpg" alt="Product Image"></td>
+                                <td>
+                                    <div>
+                                        <label>Luxury Charms Ring</label>
+                                        <p>Code: 78205</p>
+                                    </div>
+                                </td>
+                                <td><h2>$620.73</h2></td>
+                                <td><button><img src="assets/svg/trash.svg" alt="Favorite"></td></button>
+                            </tr>
+                            <tr>
+                                <td><img class="image-car" src="assets/images/catalogue4-4.jpg" alt="Product Image"></td>
+                                <td>
+                                    <div>
+                                        <label>Luxury Charms Ring</label>
+                                        <p>Code: 78205</p>
+                                    </div>
+                                </td>
+                                <td><h2>$620.73</h2></td>
+                                <td><button><img src="assets/svg/trash.svg" alt="Favorite"></td></button>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container-pay">
+                    <h2>Payment method</h2>
+                    <p style="color:#379AE6">Chance payment methods</p>
+                    <br>
+                    <div class="method_of_pay">
+                        <div class="card-pay">
+                            <div class="pay-method">
+                                <div class="mastercard">
+                                    <img src="assets/svg/mastercard.svg" alt="Favorite">
+                                    <p>Mastercard</p>
+                                </div>
+                                <p>****5987</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <h3>Voucher</h3>
+                        <br>
+                        <div>
+                            <input type="text" placeholder=" $15 OFF" name="" id="">
+                            <button class="button-aply">Apply</button>
+                            <p class="descuent">$15 Off</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <h3>Summary</h3>
+                        <table class="table-pay">
+                            <tr>
+                                <td>Subtotal</td>
+                                <td>$1073.72</td>
+                            </tr>
+                            <tr>
+                                <td>Discount</td>
+                                <td>-$15</td>
+                            </tr>
+                            <tr>
+                                <td>Fee</td>
+                                <td>$0</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td class="total-pay">$1058.72</td>
+                            </tr>
+                        </table>
+                        <button class="button-pay button">Procced to payment</button>
+                    </div>
+                </div>
+            </div>
         </section>
-
+        <div>
+            <h2 class="title-green title-space">You may also like</h2>
         <section class="catalogue">
             <div class="catalog-container">
                 <div class="catalog-item">
                     <img class="image-catalogue" src="assets/images/catalogue1.jpg" alt="">
-                    <h3>Shimmering Ring</h3>
+                    <h3>Radiance Necklace</h3>
                     <p>$168.76</p>
                 </div>
                 <div class="catalog-item">
@@ -92,12 +184,17 @@
                 </div>
                 <div class="catalog-item">
                     <img class="image-catalogue" src="assets/images/catalogue3.jpg" alt="">
-                    <h3>Elegance Earrings</h3>
+                    <h3>Glamour Necklace</h3>
                     <p>$620.73</p>
                 </div>
                 <div class="catalog-item">
                     <img class="image-catalogue" src="assets/images/catalogue4.jpg" alt="">
-                    <h3>Luxury Charms Brooch</h3>
+                    <h3>Delights Earrings</h3>
+                    <p>$327.71</p>
+                </div>
+                <div class="catalog-item">
+                    <img class="image-catalogue" src="assets/images/catalogue4.jpg" alt="">
+                    <h3>Dreamy Necklace</h3>
                     <p>$327.71</p>
                 </div>
             </div>
