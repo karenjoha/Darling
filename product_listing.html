@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/product_listing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Product_listing</title>
+</head>
+<body>
+    <header>
+        <header>
+            <nav class="header__nav">
+                <a class="header__logo" href="">Darling.</a>
+                <div class="header__links">
+                    <ul>
+                    <li><a href="">Home</a></li>
+                    <li class="active"><a href="">Shop</a></li>
+                    <li ><a href="">Collections</a></li>
+                    <li><a href="">About</a></li>
+                    </ul>
+                    <div class="header__buttons">
+                    <button>
+                    <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                        stroke="white"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M10 8.5C11.6569 8.5 13 7.15685 13 5.5C13 3.84315 11.6569 2.5 10 2.5C8.34315 2.5 7 3.84315 7 5.5C7 7.15685 8.34315 8.5 10 8.5Z"/>
+                        <path
+                            d="M10 11C8.27609 11 6.62279 11.6848 5.40381 12.9038C4.18482 14.1228 3.5 15.7761 3.5 17.5L16.5 17.5C16.5 15.7761 15.8152 14.1228 14.5962 12.9038C13.3772 11.6848 11.7239 11 10 11Z"
+                            stroke="white"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        </svg>
+                    </button>
+                    <button>
+                        <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"> 
+                        <path
+                            d="M2.5 2.5L5.5 2.5L5.5 10C5.5 10.828 6.172 11.5 7 11.5L14.419 11.5C15.065 11.5 15.638 11.087 15.842 10.474L17.5 5.5L5.5 5.5"
+                            stroke="white"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M6 17.5C6.82843 17.5 7.5 16.8284 7.5 16C7.5 15.1716 6.82843 14.5 6 14.5C5.17157 14.5 4.5 15.1716 4.5 16C4.5 16.8284 5.17157 17.5 6 17.5Z"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke="white"
+                        />
+                        <path
+                        d="M15 17.5C15.8284 17.5 16.5 16.8284 16.5 16C16.5 15.1716 15.8284 14.5 15 14.5C14.1716 14.5 13.5 15.1716 13.5 16C13.5 16.8284 14.1716 17.5 15 17.5Z"
+                        stroke="white"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        />
+                    </svg>
+                    </button>
+                </div>
+                </div>
+                <button class="header__menu"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#F5D38EFF"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg></button>
+            </nav> 
+            <section class="banner">
+                <div class="banner-elements">
+                    <h1 class="title-banner">Our Products</h1>
+                    <form action="busqueda" method="get" class="form-banner">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.5716 20.5714L17.1431 17.1428" stroke="#323842" stroke-width="2.05714" stroke-miterlimit="10" stroke-linecap="square"/>
+                            <path d="M10.2859 17.1428C14.0729 17.1428 17.143 14.0727 17.143 10.2856C17.143 6.49851 14.0729 3.42847 10.2859 3.42847C6.49876 3.42847 3.42871 6.49851 3.42871 10.2856C3.42871 14.0727 6.49876 17.1428 10.2859 17.1428Z" stroke="#323842" stroke-width="2.05714" stroke-miterlimit="10" stroke-linecap="square"/>
+                            <path d="M6.85693 10.2857C6.85693 9.37644 7.21816 8.50436 7.86114 7.86138C8.50412 7.2184 9.37619 6.85718 10.2855 6.85718" stroke="#323842" stroke-width="2.05714" stroke-miterlimit="10"/>
+                            </svg>
+                        <!-- <label for="busqueda">Buscar:</label> -->
+                        <input type="text" class="texto-busqueda" name="busqueda" placeholder="Find jewerly you like">
+                        </form>
+                </div>
+            </section>
+    </header>
+    <nav class="categories">
+        <ul class="menu">
+            <li class="list">All</li>
+            <li class="list">Rings</li>
+            <li class="list">Bracelets</li>
+            <li class="list">Necklaces</li>
+            <li class="list">Earrings</li>
+        </ul>
+        <select name="filter" class="filter-select">
+            <option value="sort">Sort by price</option>
+        </select>
+    </nav>
+    <main>
+    <article class="card">
+        <figure>
+            <img src="assets/images/Luxury.svg" alt="">
+        </figure>
+        <div>
+            <h2>Luxury Gems Necklace</h2>
+            <p>$168.76</p>
+        </div>
+    </article>
+    <article class="card">
+        <figure>
+            <img src="assets/images/Aurora.svg" alt="">
+        </figure>
+        <div>
+            <h2>Aurora Ring</h2>
+            <p>$125.28</p>
+        </div>
+    </article>
+    <article class="card">
+        <figure>
+            <img src="assets/images/Reflections.svg" alt="">
+        </figure>
+        <div>
+            <h2>Reflections Necklace</h2>
+            <p>$620.73</p>
+        </div>
+    </article>
+    <article class="card">
+        <figure>
+            <img src="assets/images/Dreamy.svg" alt="">
+        </figure>
+        <div>
+            <h2>Dreamy Infinity Ring</h2>
+            <p>$327.71</p>
+        </div>
+    </article>
+    <article class="card">
+        <figure>
+            <img src="assets/images/Opulent.svg" alt="">
+        </figure>
+        <div>
+            <h2>Opulent Jewels Ring</h2>
+            <p>$168.76</p>
+        </div>
+    </article>
+    <article class="card">
+        <figure>
+            <img src="assets/images/Serene.svg" alt="">
+        </figure>
+        <div>
+            <h2>Serene Solitarie Earrings</h2>
+            <p>$125.28</p>
+        </div>
+    </article>
+    <article class="card">
+        <figure>
+            <img src="assets/images/Timeless-Halo.svg" alt="">
+        </figure>
+        <div>
+            <h2>Timeless Halo Earrings</h2>
+            <p>$620.73</p>
+        </div>
+    </article>
+    <article class="card">
+        <figure>
+            <img src="assets/images/Exquisite.svg" alt="">
+        </figure>
+        <div>
+            <h2>Exquisite Earrings</h2>
+            <p>$327.71</p>
+        </div>
+    </article>
+    <article class="card">
+        <figure>
+            <img src="assets/images/Timeless-elegance.svg" alt="">
+        </figure>
+        <div>
+            <h2>Timeless Elegance Ring</h2>
+            <p>$168.76</p>
+        </div>
+    </article>
+    <article class="card">
+        <figure>
+            <img src="assets/images/Luxury-charms.svg" alt="">
+        </figure>
+        <div>
+            <h2>Luxury Charms Ring</h2>
+            <p>$620.73</p>
+        </div>
+    </article>
+    <article class="card">
+        <figure>
+            <img src="assets/images/Blissful.svg" alt="">
+        </figure>
+        <div>
+            <h2>Blissful Bloom Ring</h2>
+            <p>$620.73</p>
+        </div>
+    </article>
+    <article class="card">
+        <figure>
+            <img src="assets/images/Sparkling.svg" alt="">
+        </figure>
+        <div>
+            <h2>Sparkling Ring</h2>
+            <p>$620.73</p>
+        </div>
+    </article>
+    <article class="card">
+        <figure>
+            <img src="assets/images/Glimmering.svg" alt="">
+        </figure>
+        <div>
+            <h2>Glimmering Ring</h2>
+            <p>$620.73</p>
+        </div>
+    </article>
+</main>
+<div class="pagination">
+    <a href="#" class="prev"><img src="assets/images/back.svg" alt=""></a>
+    <a href="#">1</a>
+    <a href="#" class="active">2</a>
+    <a href="#">3</a>
+    <a href="#"><img src="assets/images/points.svg" alt=""></a>
+    <a href="#">10</a>
+    <a href="#" class="next"><img src="assets/images/next.svg" alt=""></a>
+</div>
+<section>
+    <div class="section__services">
+        <div class="icons">
+            <img src="/assets/images/Delivery time 1.svg" alt="delivery">
+            <h3>Delivery</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, sed nihil!</p>
+        </div>
+        <div class="icons">
+            <img src="/assets/images/Love message 1.svg" alt="lovemessage">
+            <h3>Customer care</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, fugiat facere.</p>
+        </div>
+        <div class="icons">
+            <img src="assets/images/Lock landscape 1.svg" alt="locklandscape">
+            <h3>Payment security</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, omnis autem?</p>
+        </div>
+    </div>
+</section>
+</body>
+<footer>
+    <div class="container">
+        <div class="group">
+            <div class="logo">
+                <img src="./assets/image/logo.png" alt="Logo de Darling">
+            </div>
+    
+            <nav class="footer-link">
+                <ul>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">About</a></li>
+                </ul>
+                <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                </ul>
+            </nav>
+            <div>
+                <label for="">Subscribe to our newsletter</label>
+                <p>For product announcements and exclusive insights</p>
+                <div class="input-group">
+                    <input type="email" placeholder="Input your email">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="group">
+            <div class="copyright">
+                <p>&copy; 2022 Brand, Inc.</p>
+            </div>
+            <div>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 14 14"><path fill="#FFFFFF" fill-rule="evenodd" d="M8.475 1.163c1.302-.335 2.873.127 3.83 1.146h1.073a.5.5 0 0 1 .45.717l-1.055 2.186c.3 2.548-.697 4.984-2.702 6.424c-2.05 1.473-5.067 1.844-8.645.378a1 1 0 0 1 .051-1.888a6.268 6.268 0 0 0 1.564-.662a6.02 6.02 0 0 1-2.757-6.55a1 1 0 0 1 1.695-.592C3.392 3.711 4.627 4.285 5.483 4.52c.332.091.61.132.822.149c-.066-.88.084-1.614.416-2.194c.404-.707 1.047-1.13 1.754-1.312" clip-rule="evenodd"/></svg>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#FFFFFF" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669c1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 56 56"><path fill="#FFFFFF" fill-rule="evenodd" d="M45.608 45.607h-7.415V34.002c0-2.766-.048-6.326-3.853-6.326c-3.86 0-4.449 3.015-4.449 6.129v11.802h-7.407V21.745h7.108v3.263h.103c.99-1.877 3.409-3.855 7.016-3.855c7.51 0 8.897 4.94 8.897 11.367zM14.123 18.485a4.299 4.299 0 0 1-4.303-4.301a4.3 4.3 0 0 1 8.6 0a4.3 4.3 0 0 1-4.297 4.301m-3.714 27.122h7.423V21.745H10.41zM49.3 3H6.688C4.653 3 3 4.614 3 6.606v42.787c0 1.992 1.653 3.608 3.688 3.608H49.3c2.04 0 3.699-1.616 3.699-3.608V6.606C53 4.614 51.34 3 49.301 3"/></svg>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#FFFFFF" fill-rule="evenodd" d="M21.7 8c0-.7-.4-1.3-.8-2c-.5-.5-1.2-.8-2-.8C16.2 5 12 5 12 5s-4.2 0-7 .2c-.7 0-1.4.3-2 .9c-.3.6-.6 1.2-.7 2l-.2 3.1v1.5c0 1.1 0 2.2.2 3.3c0 .7.4 1.3.8 2c.6.5 1.4.8 2.2.8l6.7.2s4.2 0 7-.2c.7 0 1.4-.3 2-.9c.3-.5.6-1.2.7-2l.2-3.1v-1.6c0-1 0-2.1-.2-3.2M10 14.6V9l5.4 2.8z" clip-rule="evenodd"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
