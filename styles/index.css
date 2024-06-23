@@ -15,7 +15,7 @@ html, body {
 main {
     flex: 1;
 }
-/* Home styles */
+
 .section-green{
     background-color: var(--primary-green);
     color: #ffffff;
@@ -319,7 +319,6 @@ div h1{
 
 }
 
-/* lo que comente */
 .card figcaption{
     display: flex;
     align-items: center;
@@ -342,13 +341,6 @@ div h1{
     height: 100%;
 }
 
-/* .card:nth-child(9){
-    grid-column: 1/3;
-    grid-row: 3/5;
-} */
-
-
-
 .card{
     aspect-ratio: 360/360;
     position: relative;
@@ -361,13 +353,6 @@ div h1{
     object-fit: cover;
     object-position: center;
     border-radius: 5px;
-
-    /* estilos nuevos */
-    /* top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; */
 }
 
 .card figure img{
@@ -377,17 +362,11 @@ div h1{
     object-position: center;
 }
 
-/* .card figure{
-    padding: 0.75em 1.25em 0.75em 0.75em;
-} */
-
-
-
 
 .our-collections .card figcaption{
     bottom: 3rem; 
     left: 5rem; 
-    font-family: Cormorant Garamond; /* Heading */
+    font-family: Cormorant Garamond; 
     font-size: 2rem; 
     line-height: 48px; 
     font-weight: 400; 
