@@ -319,12 +319,12 @@ div h1{
 
 }
 
+/* lo que comente */
 .card figcaption{
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center
-    
 }
 
 @media(min-width: 1024px){
@@ -333,16 +333,74 @@ div h1{
     }
 }
 
-main .our-collections{
+
+.our-collections{
+    padding: 3.8rem;
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    padding: 10px;
-    align-items: center;
-    padding-bottom: 2rem;
-    justify-content: center;
+    grid-template-columns: repeat(3, minmax(17.4rem, 1fr));
+    gap: 1.5rem;
+    height: 100%;
 }
+
+/* .card:nth-child(9){
+    grid-column: 1/3;
+    grid-row: 3/5;
+} */
+
+
+
+.card{
+    aspect-ratio: 360/360;
+    position: relative;
+}
+
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+
+    /* estilos nuevos */
+    /* top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; */
+}
+
+.card figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* .card figure{
+    padding: 0.75em 1.25em 0.75em 0.75em;
+} */
+
+
+
+
+.our-collections .card figcaption{
+    bottom: 3rem; 
+    left: 5rem; 
+    font-family: Cormorant Garamond; /* Heading */
+    font-size: 2rem; 
+    line-height: 48px; 
+    font-weight: 400; 
+    color: var(--color-links);
+    font-family: var(--tipography-headings);
+}
+
+.card figcaption{
+    font-family: var(--tipography-body);
+    position: absolute;
+}
+
+
 
 
 .our-collections .card img{
@@ -361,7 +419,7 @@ main .our-collections{
     width: 100%;
     object-fit: cover;
     object-position: center;
-}
+} */
 
 
 .shopnow2{
