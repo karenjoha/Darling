@@ -203,7 +203,12 @@ nav{
 
 }
 
-
+@media (max-width: 850px){
+    .title{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
 
 div h1{
     position: relative; 
@@ -239,6 +244,7 @@ div h1{
 }
 
 
+
 .title .letters{
     display: flex;
     justify-content: space-between;
@@ -256,7 +262,6 @@ div h1{
     margin-right: 5rem;
     border: solid 1px white;
 }
-
 
 .title .letters{
     background-color: #093931FF;
@@ -374,6 +379,13 @@ div h1{
     font-family: var(--tipography-headings);
 }
 
+
+@media(min-width: 1025px){
+    .our-collections{
+        grid-template-columns: auto;
+    }
+}
+
 .card figcaption{
     font-family: var(--tipography-body);
     position: absolute;
@@ -389,6 +401,14 @@ div h1{
     align-content: center;
 }
 
+@media(min-width: 1024px){
+    .our-collections .card img{
+    border-radius: 0.625rem;
+    aspect-ratio: 360/360; 
+    display: grid;
+    align-content: center;
+    }
+}
 
 .card figure{
     width: 100%;
@@ -409,8 +429,6 @@ div h1{
     height: 3rem;
     border-color: var(--primary-green);
     cursor: pointer;
-    
-
 }
 
 div.button2{
@@ -420,6 +438,7 @@ div.button2{
 .button2{
     text-align: -webkit-center;
 }
+
 .grid-container.shopnow2{
     display: grid;
     align-items: center;
