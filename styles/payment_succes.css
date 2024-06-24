@@ -193,10 +193,12 @@ div .dato{
     padding-left: 3rem;
 }
 
-
+/*  */
 .order-line{
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding: 1rem 3rem;
+    height: 12rem;
+    overflow: auto;
+    margin: 1rem 0rem;
 }
 
 div .order-details{
@@ -229,3 +231,25 @@ div .order-details{
     justify-content: center;
 }
 
+.carac_product{
+    width:11rem;
+    padding: 0rem 1rem;
+    align-self: center;
+}
+.produc_order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.produc_image{
+    display: flex;
+}
+.catidad_produc{
+    background-color: #F3F4F6;
+    color: #323842;
+    width: 2rem;
+    height:1.75rem;
+}
+.code_text{
+    color: #9095A0;
+}
