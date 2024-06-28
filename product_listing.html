@@ -88,15 +88,17 @@
             </section>
     </header>
     <nav class="categories">
-        <ul class="menu">
+        <ul class="menu" id="menu">
             <li class="list" id="activeall">All</li>
-            <li class="list">Rings</li>
+            <!-- <li class="list">Rings</li>
             <li class="list">Bracelets</li>
             <li class="list">Necklaces</li>
-            <li class="list">Earrings</li>
+            <li class="list">Earrings</li> -->
         </ul>
-        <select name="filter" class="filter-select">
-            <option value="sort">Sort by price</option>
+        <select name="filter" class="filter-select" id="price-filter">
+            <option>Sort by price</option>
+            <option value="1" id="option1">Low to high</option>
+            <option value="2" id="option2">High to low</option>
         </select>
     </nav>
     <main>
@@ -249,6 +251,9 @@
 <footer id="footer-placeholder">
 </footer>
 <script src="app.js"></script>
+<!-- <script src="scripts/product_listing.js"></script> -->
+<script type="module" src="./modules/data.js"></script>
+<script type="module" src="./scripts/product_listing.js"></script>
 </body>
 
 

@@ -199,6 +199,7 @@ form{
     float: left;
     text-align: center;
     width: 9.2em;
+    cursor: pointer;
 }
 
 select{
