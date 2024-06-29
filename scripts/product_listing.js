@@ -55,3 +55,36 @@ console.log(valoresUnicos);
     
     
 
+    function filtrarProductos(criterio) {
+        const criterioLower = criterio.toLowerCase();
+        const resultados = productos.filter(producto =>
+            producto.nombre.toLowerCase().includes(criterioLower) ||
+            producto.codigo.toString().includes(criterioLower) ||
+            producto.descripcion.toLowerCase().includes(criterioLower) ||
+            producto.tipoDeAccesorio.toLowerCase().includes(criterioLower) ||
+            producto.precioUnitario.toLowerCase().includes(criterioLower)
+        );
+        console.log(resultados);
+    }
+
+/* ejemplo de uso */
+filtrarProductos("anillo");
+
+
+function sumarPreciosYMostrar(idsSeleccionados) {
+    const productosSeleccionados = productos.filter(producto =>
+        idsSeleccionados.includes(producto.idProducto)
+    );
+
+    const totalPrecio = productosSeleccionados.reduce((total, producto) => {
+        const precio = parseFloat(producto.precioUnitario.replace('$', ''));
+        return total + precio;
+    }, 0);
+
+    console.log("Productos seleccionados:", productosSeleccionados);
+    console.log(`El total de los precios es: $${totalPrecio.toFixed(2)}`);
+}
+
+// Ejemplo de uso:
+const ids = [1, 2, 3]; 
+sumarPreciosYMostrar(ids);
