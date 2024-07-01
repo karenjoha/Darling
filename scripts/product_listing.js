@@ -9,7 +9,7 @@ const tipoAccesorio = productos.map(productos=> productos.tipoDeAccesorio);
 console.log(tipoAccesorio);
 
 const categorias = [...new Set(tipoAccesorio)];
-// const listaCategorias = Array.from(new Set(categorias));
+
 console.log(categorias);
 
 
@@ -24,7 +24,7 @@ categorias.forEach(element => {
     item.addEventListener('click', ()=>{
         console.log(`Hiciste click en la categoría ${element}`)
     });
-    // console.log(item);
+    
     contenedorFiltros.appendChild(item);
 
 })
@@ -37,16 +37,29 @@ console.log(opciones);
 const listaDePrecios = productos.map(productos=> productos.precioUnitario);
 console.log(listaDePrecios);
 
-const valoresUnicos= new Set(listaDePrecios);
-console.log(valoresUnicos);
+const listaOrdenadaMenorAMayor= listaDePrecios.sort((a,b)=>a-b);
+console.log(listaOrdenadaMenorAMayor);
+// numeros.sort((a, b) => b - a);
+
+const listaOrdenadaMayorAMenor= listaDePrecios.sort((a, b) => b - a);
+console.log(listaOrdenadaMayorAMenor);
+
+// const valoresUnicos= new Set(listaDePrecios);
+// console.log(valoresUnicos);
+
+// const valoresArray = Array.from(listaDePrecios);
+// console.log(valoresArray);
+
+// const valoresOrdenados= valoresUnicos.sort();
+// console.log(valoresOrdenados);
 
     opciones.addEventListener('change', ()=>{
-        let valorOpcion=opciones.value;
+        const valorOpcion=opciones.value;
         console.log(valorOpcion);
 
     
 
-        let opcionSelect= opciones.options[opciones.selectedIndex===1 ];
+        const opcionSelect= opciones.options[opciones.selectedIndex===1 ];
 
         console.log(`Opcion:`, listaDePrecios.sort());
 
@@ -54,4 +67,32 @@ console.log(valoresUnicos);
     })
     
     
+// const contenedorFiltroPrecio= document.getElementById("price-filter");
+// console.log(contenedorFiltroPrecio);
+// console.log(contenedorFiltroPrecio.children);
+
+// const opciones= contenedorFiltroPrecio.options;
+// console.log(opciones);
+// // const opciones = document.querySelector
+
+// function ejecutarFiltros(precioUnitario) {
+//     console.log(`Hiciste click en: ${opciones.value} los valores son: ${precioUnitario}`);
+// }
+
+
+// const filtroPrecios = document.getElementById("price-filter");
+// filtroPrecios.addEventListener("click", (evento) => {
+//   ejecutarFiltros(evento
+//   );
+// });
+
+// function ejecutarFiltros(filtroPrecios,) {
+    
+// }
+
+// function busquedaVideoPorNombre(listaVideos, nombreABuscar) {
+//     return listaVideos.filter((video) =>
+//       video.namevideo.toLowerCase().includes(nombreABuscar.toLowerCase())
+//     );
+//   }
 
