@@ -2,14 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap');
 
 
-
-
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 :root{
     --color-primary: #093931FF;
     --tipography-headings:font-family: "Cormorant Garamond", serif;
@@ -153,10 +145,6 @@ input{
     /* background-color:#D5DBDB; */
 }
 
-/* .input-container {
-    position: relative;
-    width: max-content;
-} */
 label{
     position: relative;
     width: 60%;
