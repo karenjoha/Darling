@@ -236,9 +236,59 @@
             </div>
         </section>
     </main>
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items">
+
+            </ul>
+            <div class="total-price">
+                <p>Total Price: $<span id="total-price-value">$0.00</span></p>
+            </div>
+        </div>
+    </div>
     <footer id="footer-placeholder">
     </footer>
     <script src="app.js"></script>
+    <script src="scripts/product_shop.js"></script>
+    <script>
+        const productos = [
+            { idProducto: 1, nombre: "Luxury Gems Necklace", codigo: 11, precioUnitario: "$168.76", tipoDeAccesorio: "Necklaces", descripcion: "Collar de gemas", cantidadEnStock: 10 },
+            { idProducto: 2, nombre: "Aurora Ring", codigo: 12, precioUnitario: "$125.28", tipoDeAccesorio: "Rings", descripcion: "Anillo de perlas", cantidadEnStock: 10 },
+            { idProducto: 3, nombre: "Reflections Necklace", codigo: 13, precioUnitario: "$620.73", tipoDeAccesorio: "Necklaces", descripcion: "Collar liso", cantidadEnStock: 10 },
+            { idProducto: 4, nombre: "Dreamy Infinite Ring", codigo: 14, precioUnitario: "$327.71", tipoDeAccesorio: "Rings", descripcion: "Anillo gema", cantidadEnStock: 10 },
+            { idProducto: 5, nombre: "Opulent Jewels Ring", codigo: 15, precioUnitario: "$168.76", tipoDeAccesorio: "Rings", descripcion: "Anillo liso", cantidadEnStock: 10 },
+            { idProducto: 6, nombre: "Serene Solitarie Earrings", codigo: 16, precioUnitario: "$125.28", tipoDeAccesorio: "Earrings", descripcion: "Aretes Piedra Preciosa", cantidadEnStock: 10 },
+            { idProducto: 7, nombre: "Timeless Halo Earrings", codigo: 17, precioUnitario: "$620.73", tipoDeAccesorio: "Earrings", descripcion: "Aretes Piedra Preciosa", cantidadEnStock: 10 },
+            { idProducto: 8, nombre: "Exquisite Earrings", codigo: 18, precioUnitario: "$327.71", tipoDeAccesorio: "Earrings", descripcion: "Aretes Piedra Preciosa", cantidadEnStock: 10 },
+            { idProducto: 9, nombre: "Timeless Elegance Rings", codigo: 19, precioUnitario: "$168.76", tipoDeAccesorio: "Rings", descripcion: "Anillo Piedras", cantidadEnStock: 10 },
+            { idProducto: 10, nombre: "Luxury Charms Ring", codigo: 110, precioUnitario: "$620.73", tipoDeAccesorio: "Rings", descripcion: "Anillo Piedra", cantidadEnStock: 10 },
+            { idProducto: 11, nombre: "Blissful Bloom Ring", codigo: 111, precioUnitario: "$620.73", tipoDeAccesorio: "Rings", descripcion: "Anillo Hojas", cantidadEnStock: 10 },
+            { idProducto: 12, nombre: "Sparkling Ring", codigo: 112, precioUnitario: "$620.73", tipoDeAccesorio: "Rings", descripcion: "Anillo Brillante", cantidadEnStock: 10 },
+            { idProducto: 13, nombre: "Glimmering Ring", codigo: 113, precioUnitario: "$620.73", tipoDeAccesorio: "Rings", descripcion: "Anillo Piedras", cantidadEnStock: 10 },
+            { idProducto: 14, nombre: "Bracelet", codigo: 114, precioUnitario: "$820.73", tipoDeAccesorio: "Bracelets", descripcion: "Abrazalete Piedras", cantidadEnStock: 10 }
+        ];
 
+        // Seleccionar algunos productos del array para mostrarlos en el carrito
+        const productosEnCarrito = [
+            productos[1], // Aurora Ring
+            productos[6], // Timeless Halo Earrings
+            productos[10] // Blissful Bloom Ring
+        ];
+
+        function mostrarProductosEnCarrito() {
+            const listaCarrito = document.getElementById('cart-items');
+            listaCarrito.innerHTML = '';
+            productosEnCarrito.forEach(producto => {
+                const item = document.createElement('li');
+                item.textContent = `${producto.nombre} - ${producto.precioUnitario}`;
+                listaCarrito.appendChild(item);
+            });
+        }
+
+        // Llamar a la función para mostrar los productos en el carrito
+        mostrarProductosEnCarrito();
+    </script>
 </body>
 </html>
