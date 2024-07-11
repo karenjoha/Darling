@@ -136,13 +136,12 @@ input{
 
 .submit{
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: var(--color-primary);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     width: 6rem;
-    /* background-color:#D5DBDB; */
 }
 
 label{
@@ -153,6 +152,20 @@ label{
 form{
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+form input, form select{
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 26px;
+    font-weight: 400;
+    border-radius: 8px;
+}
+
+h1, h4{
+    padding: 1rem;
 }
 
 .input-container input {

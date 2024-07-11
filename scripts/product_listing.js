@@ -1,3 +1,34 @@
+//import { obtenerCategorias} from '../modules/services.js';
+
+// Función para pintar las categorías
+// const pintarCategorias = (listaCategorias, contenedor) => {
+//     contenedor.innerHTML = ""; 
+
+//     listaCategorias.forEach(categoria => {
+//         const li = document.createElement('li');
+//         const button = document.createElement('button');
+
+//         button.textContent = categoria.nombre;
+    
+
+//         li.appendChild(button);
+//         contenedor.appendChild(li); // Agrega el elemento li al contenedor
+//     });
+// };
+
+// // Variable para el contenedor de filtros
+// const contenedorFiltros = document.getElementById("filtros");
+
+// // Ejecución cuando el DOM está completamente cargado
+// document.addEventListener('DOMContentLoaded', async () => {
+//     try {
+//         const categorias =await obtenerCategorias();
+//         pintarCategorias(categorias, contenedorFiltros); // Pasamos categorias y el contenedor correcto
+//     } catch (error) {
+//         console.error('Error al obtener categorías:', error);
+//     }
+// });
+
 import { productos } from '../modules/data.js';
 
 
@@ -13,14 +44,11 @@ const categorias = [...new Set(tipoAccesorio)];
 console.log(categorias);
 
 
-
-// Para revisar
 categorias.forEach(element => {
     const item= document.createElement('ul')
     item.innerHTML=`
-        <li id=${element} name=${element}>${element}</li>
-    `
-    // console.log(item);
+        <li id=${element}>${element}</li>
+    `    // console.log(item);
     item.addEventListener('click', ()=>{
         console.log(`Hiciste click en la categoría ${element}`)
     });
@@ -28,6 +56,7 @@ categorias.forEach(element => {
     contenedorFiltros.appendChild(item);
 
 })
+
 
 
 
@@ -39,19 +68,11 @@ console.log(listaDePrecios);
 
 const listaOrdenadaMenorAMayor= listaDePrecios.sort((a,b)=>a-b);
 console.log(listaOrdenadaMenorAMayor);
-// numeros.sort((a, b) => b - a);
 
-const listaOrdenadaMayorAMenor= listaDePrecios.sort((a, b) => b - a);
+
+const listaOrdenadaMayorAMenor= listaDePrecios.sort((a, b) => b-a);
 console.log(listaOrdenadaMayorAMenor);
 
-// const valoresUnicos= new Set(listaDePrecios);
-// console.log(valoresUnicos);
-
-// const valoresArray = Array.from(listaDePrecios);
-// console.log(valoresArray);
-
-// const valoresOrdenados= valoresUnicos.sort();
-// console.log(valoresOrdenados);
 
     opciones.addEventListener('change', ()=>{
         const valorOpcion=opciones.value;
@@ -89,12 +110,6 @@ console.log(listaOrdenadaMayorAMenor);
 // function ejecutarFiltros(filtroPrecios,) {
     
 // }
-
-// function busquedaVideoPorNombre(listaVideos, nombreABuscar) {
-//     return listaVideos.filter((video) =>
-//       video.namevideo.toLowerCase().includes(nombreABuscar.toLowerCase())
-//     );
-//   }
 
     function filtrarProductos(criterio) {
         const criterioLower = criterio.toLowerCase();

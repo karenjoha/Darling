@@ -169,6 +169,7 @@ form{
     top: 0.87rem;
 }
 
+
 .categories{
     display: flex;
     justify-content: space-between;
@@ -178,18 +179,30 @@ form{
     
 
 
-.menu{
+/* .menu{
     display: flex;
     align-items: center;
     align-content: center;
     font-family: var(--tipography-body);
     align-items: center;
     font-size: 14px;
+} */
+
+menu{
+    list-style:none;
+    display: flex;
+    
+    gap: 7px;
+    padding: 2rem;
+}
+
+menu button{
+    border: none;
+    background-color: transparent;
 }
 
 
-
-.list{
+ul .menu .list{
     aspect-ratio: 148.6/38;
     display: flex;
     flex: 1 1 0;
@@ -214,7 +227,7 @@ select{
     list-style: none;
 }
 
-#activeall{
+/* menu button{
     width: 148.6px; 
     height: 38px; 
     align-items: center; 
@@ -222,12 +235,11 @@ select{
     font-family: "Manrope"; 
     font-size: 14px; 
     line-height: 22px; 
-    color: #FFFFFFFF; 
-    background: #0D554AFF;
+    color: #000000;
     opacity: 1; 
     border-radius: 19px 19px 19px 19px; 
     cursor: pointer;
-}
+} */
 
 .menu .list{
     display: flex;
@@ -252,8 +264,14 @@ select{
     border-radius: 0.13rem;
 }
 
+
+.menu ul li{
+    background-color: transparent
+}
+
 .menu li{
     border-right: 2px solid #9AEFE2FF;
+    cursor: pointer;
     
 }
 

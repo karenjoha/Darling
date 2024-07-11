@@ -451,3 +451,17 @@ div.button2{
 .logo-image{
     padding-bottom: 3rem;
 }
+
+.our-collections{
+    padding: 3.8rem;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 10px;
+    align-items: center;
+    padding-bottom: 2rem;
+    justify-content: center;
+    grid-template-columns: repeat(3, minmax(17.4rem, 1fr));
+    gap: 1.5rem;
+    height: 100%;}

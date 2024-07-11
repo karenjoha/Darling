@@ -1,54 +1,16 @@
 const formulario_payment = document.getElementById("add_payment_method");
 console.log(formulario_payment);
-// const nombre= document.querySelector("#name");
-// console.log(nombre);
 
-// console.log(formulario_payment.children);
-
-// acceder a los valores de los elementos del formulario
-
-// ]
-
-//validación de datos
-
-// formulario_payment.addEventListener('submit', function(event){
-//     event.preventDefault();
-//     const correoElectronico = document.getElementById('email').value;
-//     const  nombre =document.getElementById('name').value;
-//     const  numeroEnLaTarjeta= document.getElementById('number').value;
-//     const fechaDeCaducidad= document.getElementById('date').value;
-//     const  cvv= document.getElementById('cvv').value;
-
-//     if (!correoElectronico.includes('@')){
-//         console.log("Ingrese un correo electrónico válido");
-//     }else if( nombre.length<3)
-//     {console.log("el nombre debe tener más de 3 caracteres");
-//     }else{
-//         console.log("El número de la tarjeta debe tener 16 dígitos");
-//     }
-// })
 
 //manejar eventos de los formularios
 
 formulario_payment.addEventListener("submit", (evento) => {
   evento.preventDefault();
-  // console.log(evento);
-  // console.log(formulario_payment.children);
 
-  //     // const formData= new FormData(formulario_payment);
-  //     // console.log(formData);
-  //     const dataForm={};
-  //     const formData =new FormData(formulario_payment);
-  //     for (const [nombrePropiedad, valorPropiedad] of formData.entries()){
-  //         dataForm[nombrePropiedad]=valorPropiedad;
-  //     }
-  //     console.log(dataForm);
-  // })
-
-  const dataForm = {};
-  const formData = formulario_payment.children;
-  for (const elemento of formData) {
-    if (elemento.localName != "label" && elemento.localName != "button") {
+  const dataForm = {}; // Inicializamos un objeto vacío para almacenar los datos del formulario.
+  const formData = formulario_payment.children; // Obtenemos los hijos del formulario
+  for (const elemento of formData) { //iteramos sobre cada hijo
+    if (elemento.localName != "label" && elemento.localName != "button") { //comprobamos para verificar los valores que se están capturando
       console.log(elemento.value);
       // console.log(elemento.type);
       dataForm[elemento.id] = elemento.ariaValueMax;
@@ -69,14 +31,7 @@ formulario_payment.addEventListener("submit", (evento) => {
   } else {
     console.log(`Correo: $${email} - No válido.`);
   }
-  // Ejemplos de uso
-  // const email1 = "test@example.com";
-  // const email2 = "invalid-email";
 
-  // console.log(`Correo Electrónico: ${email1} - ${validarEmail(email1) ? 'Válido' : 'No válido'}`);
-  // console.log(`Correo Electrónico: ${email2} - ${validarEmail(email2) ? 'Válido' : 'No válido'}`);
-
-  // console.log(dataForm);
   const nombre = document.getElementById("name").value;
   const nombreRegex = /^.{10,}$/;
 
@@ -150,5 +105,3 @@ formulario_payment.addEventListener("submit", (evento) => {
     console.log("el cvv debe tener 3 numeros");
 });
 
-// }
-// )

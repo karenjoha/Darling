@@ -8,6 +8,7 @@ export const productos = [
         descripcion: "Collar de gemas",
         imagen: "",
         cantidadEnStock: 10,
+        categoria: "Necklaces"
     },
     {
         idProducto: 2, 
@@ -17,6 +18,7 @@ export const productos = [
         tipoDeAccesorio: "Rings",
         descripcion: "Anillo de perlas",
         cantidadEnStock: 10,
+        categoria: "Rings"
     },
     {
         idProducto: 3, 
@@ -26,6 +28,7 @@ export const productos = [
         tipoDeAccesorio: "Necklaces",
         descripcion: "Collar liso",
         cantidadEnStock: 10,
+        categoria: "Necklaces"
     },
     {
         idProducto: 4, 
@@ -35,6 +38,7 @@ export const productos = [
         tipoDeAccesorio: "Rings",
         descripcion: "Anillo gema",
         cantidadEnStock: 10,
+        categoria: "Rings"
     },
     {
         idProducto: 5, 
@@ -44,6 +48,7 @@ export const productos = [
         tipoDeAccesorio: "Rings",
         descripcion: "Anillo liso",
         cantidadEnStock: 10,
+        categoria: "Rings"
     },
     {
         idProducto: 6, 
@@ -53,6 +58,7 @@ export const productos = [
         tipoDeAccesorio: "Earrings",
         descripcion: "Aretes Piedra Preciosa",
         cantidadEnStock: 10,
+        categoria: "Earrings"
     },
     {
         idProducto: 7, 
@@ -62,6 +68,7 @@ export const productos = [
         tipoDeAccesorio: "Earrings",
         descripcion: "Aretes Piedra Preciosa",
         cantidadEnStock: 10,
+        categoria: "Earrings"
     },
     {
         idProducto: 8, 
@@ -71,6 +78,7 @@ export const productos = [
         tipoDeAccesorio: "Earrings",
         descripcion: "Aretes Piedra Preciosa",
         cantidadEnStock: 10,
+        categoria: "Earrings"
     },
     {
         idProducto: 9, 
@@ -80,6 +88,7 @@ export const productos = [
         tipoDeAccesorio: "Rings",
         descripcion: "Anillo Piedras",
         cantidadEnStock: 10,
+        categoria: "Rings"
     },
     {
         idProducto: 10, 
@@ -89,6 +98,7 @@ export const productos = [
         tipoDeAccesorio: "Rings",
         descripcion: "Anillo Piedra",
         cantidadEnStock: 10,
+        categoria: "Rings"
     },
     {
         idProducto: 11, 
@@ -98,6 +108,7 @@ export const productos = [
         tipoDeAccesorio: "Rings",
         descripcion: "Anillo Hojas",
         cantidadEnStock: 10,
+        categoria: "Rings"
     },
     {
         idProducto: 12, 
@@ -107,6 +118,7 @@ export const productos = [
         tipoDeAccesorio: "Rings",
         descripcion: "Anillo Brillante",
         cantidadEnStock: 10,
+        categoria: "Rings"
     },
     {
         idProducto: 13, 
@@ -116,6 +128,7 @@ export const productos = [
         tipoDeAccesorio: "Rings",
         descripcion: "Anillo Piedras",
         cantidadEnStock: 10,
+        categoria: "Rings"
     },
     {
         idProducto: 14, 
@@ -123,8 +136,9 @@ export const productos = [
         codigo: 114,
         precioUnitario: "$820.73",
         tipoDeAccesorio: "Bracelets",
-        descripcion: "Abrazalete Piedras",
+        descripcion: "Brazalete Piedras",
         cantidadEnStock: 10,
+        categoria: "Necklaces"
     }
 
 ];
